@@ -1,6 +1,6 @@
 # Slicing Web Belajaran E-Course Online Landing Page
 
-Live Site: [Belajaran E-Course Online Landing Page](slicing-belajaran.netlify.app)
+Live Site: [Belajaran E-Course Online Landing Page](https://slicing-belajaran.netlify.app)
 
 ## Credits
 
