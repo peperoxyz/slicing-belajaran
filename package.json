@@ -1,0 +1,23 @@
+{
+  "name": "slicing-belajaran-landingpage",
+  "version": "1.0.0",
+  "description": "Slicing Landing Page Web Belajaran Design by @muhammadzaini on Dribbble",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./tailwind.css -o ./blj-styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peperoxyz/slicing-belajaran.git"
+  },
+  "author": "Dea Ananda Gunawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peperoxyz/slicing-belajaran/issues"
+  },
+  "homepage": "https://github.com/peperoxyz/slicing-belajaran#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}
