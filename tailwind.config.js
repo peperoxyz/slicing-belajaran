@@ -12,10 +12,12 @@ module.exports = {
         bljwhite: "F1F1F1",
       },
       spacing: {
-        "128": "32rem",
-        "256": "64rem",
-        "512": "128rem",
-      }
+        76: "18rem",
+        128: "32rem",
+        144: "36rem",
+        256: "64rem",
+        512: "128rem",
+      },
     },
   },
   plugins: [],
