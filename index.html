@@ -15,14 +15,16 @@
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Poppins:wght@200;300;400;600;700;800&display=swap");
     </style>
   </head>
-  <body>
-    <header class="font-sans">
-      <nav class="text-white bg-bljdark pt-9 pb-44">
-        <div class="mx-auto flex flex-wrap justify-between max-w-5xl space-x-32">
-          <ul class="mt-2">
-            <li><a class="text-4xl" href="">Belajaran</a></li>
+  <body class="">
+    <header class="bg-bljdark">
+      <!-- Navbar Desktop -->
+      <nav class="text-white bg-bljdark px-8 py-20 hidden sm:block ">
+        <div class="mx-auto flex flex-nowrap justify-between max-w-5xl space-x-32">
+          <ul class="flex space-x-2 items-center sm:text-4xl">
+            <li><i class="bx bx-book-reader text-bljyellow text-2xl sm:text-4xl"></i></li>
+            <li><a href="#" class="text-white font-semibold">Belajaran</a></li>
           </ul>
-          <ul class="flex flex-wrap space-x-6 text-lg mt-3">
+          <ul class="flex flex-nowrap space-x-6 text-xl mt-3">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Class</a></li>
@@ -33,22 +35,33 @@
           </ul>
         </div>
       </nav>
-    </header>
-
-    <main>
-      <section class="bg-bljdark">
-        <!-- <div class="container mb-96"></div> -->
-        <div class="container mb-32 mx-auto max-w-4xl h-144 text-center space-y-10">
-          <h1 class="font-semibold text-5xl text-white">Learn design and coding from anywhere and anytime</h1>
-          <div class="max-w-3xl mx-auto">
-            <p class="text-xl text-white">a solution for easy and flexible online learning, you can learn anywhere and anytime</p>
-          </div>
-          <button class="button bg-bljyellow text-black py-4 px-7 text-base rounded-xl font-semibold"><a href="">Get Started</a></button>
+      <!-- Navbar Mobile-->
+      <nav class="flex items-center justify-between p-8 sm:hidden">
+        <ul class="flex space-x-2 items-center sm:text-4xl">
+          <li><i class="bx bx-book-reader text-bljyellow text-2xl sm:text-4xl"></i></li>
+          <li><a href="#" class="text-white font-semibold">Belajaran</a></li>
+        </ul>
+        <ul class="">
+          <li>
+            <a href=""><i class="bx bx-menu text-white text-2xl"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Main copy writing -->
+      <div class="container sm:mb-32 mx-auto text-center p-11 space-y-6">
+        <h1 class="font-semibold text-3xl sm:text-5xl sm:max-w-4xl mx-auto sm:leading-normal text-white">Learn design and coding from anywhere and anytime</h1>
+        <div class="max-w-3xl mx-auto">
+          <p class="sm:text-xl text-sm text-gray-400 font-semibold">a solution for easy and flexible online learning, you can learn anywhere and anytime</p>
         </div>
-      </section>
-      <section>
-        <div class="mx-auto max-w-5xl">
-          <!-- <img src="./assets/images/dashboard.png" alt="dashboard" class="inline -mt-52" /> -->
+        <button class="button bg-bljyellow text-black py-3 px-6 sm:py-4 sm:px-7 text-base rounded-lg font-semibold"><a href="">Get Started</a></button>
+      </div>
+      <div class="h-20 sm:h-52 sm:w-14"></div>
+    </header>
+    <main>
+      <!-- Dashboard for desktop-view -->
+      <section class="hidden sm:flex">
+        <div class="mx-auto max-w-7xl">
+          <!-- <img src="../assets/images//dashboard.png" alt="dashboard" class="inline -mt-52" /> -->
           <div class="grid grid-cols-12 border rounded-2xl overflow-hidden shadow-lg -mt-72">
             <div class="col-span-1 flex flex-col justify-between items-center p-5 text-neutral-400 bg-gray-50">
               <div>
@@ -89,7 +102,7 @@
                   <div>
                     <div class="py-4 px-5 rounded-xl bg-white w-96 mx-auto shadow-lg">
                       <div>
-                        <img class="rounded-xl w-full h-40 object-cover object-center" src="/assets/images/card2.jpg" alt="" />
+                        <img class="rounded-xl w-full h-40 object-cover object-center" src="./assets/images//card2.jpg" alt="" />
                         <div class="relative -top-32 -mt-4 ml-2">
                           <a href="#" class="py-2 px-4 bg-white text-black text-xs tracking-wider rounded-full"> <span class="">Class UI/UX Design</span></a>
                         </div>
@@ -102,10 +115,10 @@
                       <div class="mt-4 flex space-x-3 text-sm text-neutral-700">
                         <div class="bg-yellow-100 py-2 px-3 rounded-2xl">Beginner</div>
                         <div class="flex relative">
-                          <img class="rounded-full w-8 h-8" src="/assets/images/dea.jpg" alt="" />
-                          <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                          <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                          <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
+                          <img class="rounded-full w-8 h-8" src="./assets/images//deaag.jpg" alt="" />
+                          <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                          <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                          <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                           <div class="bg-neutral-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
                         </div>
                       </div>
@@ -125,7 +138,7 @@
                   <div class="">
                     <div class="py-4 px-5 rounded-xl bg-white w-96 mx-auto shadow-lg">
                       <div>
-                        <img class="rounded-xl w-full h-40 object-cover object-center" src="/assets/images/card1.jpg" alt="" />
+                        <img class="rounded-xl w-full h-40 object-cover object-center" src="./assets/images//card-satu.jpg" alt="" />
                         <div class="relative -top-32 -mt-4 ml-2">
                           <a href="#" class="py-2 px-4 bg-white text-black text-xs tracking-wider rounded-full"> <span class="">Class Web Developer</span></a>
                         </div>
@@ -138,10 +151,10 @@
                       <div class="mt-4 flex space-x-3 text-sm text-neutral-700">
                         <div class="bg-yellow-100 py-2 px-3 rounded-2xl">Intermediate</div>
                         <div class="flex relative">
-                          <img class="rounded-full w-8 h-8" src="/assets/images/dea.jpg" alt="" />
-                          <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                          <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                          <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
+                          <img class="rounded-full w-8 h-8" src="./assets/images//deaag.jpg" alt="" />
+                          <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                          <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                          <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                           <div class="bg-neutral-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
                         </div>
                       </div>
@@ -164,17 +177,17 @@
               </div>
               <!-- 1 -->
               <div class="flex items-center bg-white w-full p-2 rounded-xl mt-4 space-x-4 shadow-lg">
-                <img src="./assets/images/card2.jpg" class="w-20 rounded-xl object-cover object-center h-20" alt="" />
+                <img src="./assets/images//card2.jpg" class="w-20 rounded-xl object-cover object-center h-20" alt="" />
                 <div>
                   <p class="text-sm font-semibold">Class 3D Illustration</p>
                   <p class="text-xs">Lorem Ipsum Dolor Sit Amet</p>
                 </div>
                 <div class="flex text-sm text-neutral-700">
                   <div class="flex relative">
-                    <img class="rounded-full w-5 h-5" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-5 h-5 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-5 h-5 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-5 h-5 -ml-2" src="/assets/images/dea.jpg" alt="" />
+                    <img class="rounded-full w-5 h-5" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <div class="bg-neutral-800 w-5 h-5 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center text-xs">9+</div>
                   </div>
                 </div>
@@ -187,17 +200,17 @@
               <!-- End 1 -->
               <!-- 2 -->
               <div class="flex items-center bg-white w-full p-2 rounded-xl mt-4 space-x-4 shadow-lg">
-                <img src="./assets/images/card2.jpg" class="w-20 rounded-xl object-cover object-center h-20" alt="" />
+                <img src="./assets/images//card2.jpg" class="w-20 rounded-xl object-cover object-center h-20" alt="" />
                 <div>
                   <p class="text-sm font-semibold">Class 3D Illustration</p>
                   <p class="text-xs">Lorem Ipsum Dolor Sit Amet</p>
                 </div>
                 <div class="flex text-sm text-neutral-700">
                   <div class="flex relative">
-                    <img class="rounded-full w-5 h-5" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-5 h-5 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-5 h-5 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-5 h-5 -ml-2" src="/assets/images/dea.jpg" alt="" />
+                    <img class="rounded-full w-5 h-5" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <div class="bg-neutral-800 h-5 w-5 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center text-xs">9+</div>
                   </div>
                 </div>
@@ -215,7 +228,7 @@
               <div class="mb-4">
                 <div class="flex justify-between items-center">
                   <div class="flex space-x-2 items-center">
-                    <img src="./assets/images/card1.jpg" class="w-9 h-9 rounded-full" alt="" />
+                    <img src="./assets/images//card-satu.jpg" class="w-9 h-9 rounded-full" alt="" />
                     <div class="flex">
                       <div>
                         <p class="font-semibold text-sm">Dea Ananda</p>
@@ -242,7 +255,7 @@
                   <div class="flex justify-between">
                     <div class="flex space-x-2 items-center">
                       <div>
-                        <img src="./assets/images/card2.jpg" class="w-7 h-7 rounded-full" alt="" />
+                        <img src="./assets/images//card2.jpg" class="w-7 h-7 rounded-full" alt="" />
                         <div class="rounded-full bg-green-500 h-2.5 w-2.5 -mt-1 relative ml-3"></div>
                       </div>
                       <p class="font-semibold text-sm">Hasan Ali</p>
@@ -261,7 +274,7 @@
                     <div class="flex justify-between">
                       <div class="flex space-x-2 items-center">
                         <div>
-                          <img src="./assets/images/card2.jpg" class="w-7 h-7 rounded-full" alt="" />
+                          <img src="./assets/images//card2.jpg" class="w-7 h-7 rounded-full" alt="" />
                           <div class="rounded-full bg-green-500 h-2.5 w-2.5 -mt-1 relative ml-3"></div>
                         </div>
                         <p class="font-semibold text-sm">Bella Swan</p>
@@ -286,22 +299,45 @@
           </div>
         </div>
       </section>
-      <section class="mt-32">
-        <div class="mx-auto flex max-w-xl justify-center space-x-5 mb-32">
-          <div>ticket.com</div>
-          <div>netflix</div>
-          <div>facebook</div>
-          <div>dropbox</div>
-          <div>airbnb</div>
+
+      <!-- Logos -->
+      <div class="flex flex-wrap justify-center items-center space-x-3 my-10 sm:my-24 px-2.5">
+        <img src="./assets/images//ticket.png" class="h-7 sm:h-11" alt="" />
+        <img src="./assets/images//netflix.png" class="h-14 sm:h-20" alt="" />
+        <img src="./assets/images//dropbox.png" class="h-7 sm:h-11" alt="" />
+        <img src="./assets/images//facebook.png" class="h-7 sm:h-11" alt="" />
+        <img src="./assets/images//airbnb.png" class="h-14 sm:h-22" alt="" />
+      </div>
+
+      <!-- Card 1 (image) and why we learn from belajaran -->
+      <div class="sm:hidden flex-col max-w-lg justify-center items-center mx-auto">
+        <img class="mx-auto" src="./assets/images//first-card.png" alt="" />
+        <!-- Why we learn from belajaran -->
+        <div class="container flex-col space-y-6 max-w-lg p-4 sm:hidden">
+          <h2 class="font-semibold text-3xl">Why we learn from Belajaran</h2>
+          <p class="text-lg">Belajaran is a global edutect based in Indonesia. A solution for easy and flexible online learning. You can learn anywhere and anytime.</p>
+          <!-- <div class="flex text-sm space-x-2"> -->
+          <ul class="grid grid-cols-2 gap-3 text-lg">
+            <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-3xl"></i><span>World Class</span></li>
+            <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-3xl"></i><span>Flexible</span></li>
+            <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-3xl"></i><span>Faster Duration</span></li>
+            <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-3xl"></i><span>Affordable</span></li>
+            <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-3xl"></i><span>Professional Skill</span></li>
+            <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-3xl"></i><span>Certificate</span></li>
+          </ul>
+          <!-- </div> -->
+          <button class="bg-black text-white py-4 px-6 rounded-xl">Read More</button>
         </div>
-      </section>
-      <section>
-        <div class="mx-auto flex max-w-5xl justify-between space-x-5 p-7">
+      </div>
+
+      <!-- Card 1 (code) and why we learn from belajaran -->
+      <section class="">
+        <div class="hidden sm:flex mx-auto max-w-7xl justify-between space-x-5 p-7">
           <div class="container bg-white rounded-xl w-96 h-72">
             <div>
               <div class="py-4 px-5 rounded-xl bg-white w-96 mx-auto shadow-lg">
                 <div>
-                  <img class="rounded-xl w-full h-44 object-cover object-center" src="/assets/images/card2.jpg" alt="" />
+                  <img class="rounded-xl w-full h-44 object-cover object-center" src="./assets/images//card2.jpg" alt="" />
                   <div class="relative -top-36 -mt-4 ml-2">
                     <a href="#" class="py-2 px-4 bg-white text-black text-xs tracking-wider rounded-full"> <span class="">Class UI/UX Design</span></a>
                   </div>
@@ -314,10 +350,10 @@
                 <div class="mt-4 flex space-x-3 text-sm text-neutral-700">
                   <div class="bg-yellow-100 py-2 px-3 rounded-2xl">Beginner</div>
                   <div class="flex relative">
-                    <img class="rounded-full w-8 h-8" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                    <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
+                    <img class="rounded-full w-8 h-8" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                    <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <div class="bg-neutral-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
                   </div>
                 </div>
@@ -330,10 +366,10 @@
               </div>
 
               <!-- Class Icon Card -->
-              <div class="flex pt-4 px-4 mt-4 shadow-xl items-center w-96 mx-auto">
-                <img src="./assets/images/card1.jpg" class="w-14 h-14 rounded-xl" alt="" />
+              <div class="flex p-5 mt-4 shadow-xl items-center w-96 mx-auto">
+                <img src="./assets/images//figma.png" class="w-20 h-20 rounded-xl" alt="" />
                 <div class="p-4">
-                  <p class="font-semibold">Class Icon</p>
+                  <p class="font-semibold text-lg">Class Icon</p>
                   <p class="text-sm">Introducing icon mastering</p>
                 </div>
               </div>
@@ -346,22 +382,53 @@
             <p class="text-lg">Belajaran is a global edutect based in Indonesia. A solution for easy and flexible online learning. You can learn anywhere and anytime.</p>
             <!-- <div class="flex text-sm space-x-2"> -->
             <ul class="grid grid-cols-2 gap-3 text-xl">
-              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle" style="color: #91e5aa"></i><span>World Class</span></li>
-              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle" style="color: #91e5aa"></i><span>Flexible</span></li>
-              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle" style="color: #91e5aa"></i><span>Faster Duration</span></li>
-              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle" style="color: #91e5aa"></i><span>Affordable</span></li>
-              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle" style="color: #91e5aa"></i><span>Professional Skill</span></li>
-              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle" style="color: #91e5aa"></i><span>Certificate</span></li>
+              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-4xl"></i><span>World Class</span></li>
+              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-4xl"></i><span>Flexible</span></li>
+              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-4xl"></i><span>Faster Duration</span></li>
+              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-4xl"></i><span>Affordable</span></li>
+              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-4xl"></i><span>Professional Skill</span></li>
+              <li class="flex items-center space-x-2"><i class="bx bxs-check-circle text-green-400 text-4xl"></i><span>Certificate</span></li>
             </ul>
             <!-- </div> -->
             <button class="bg-black text-white py-4 px-6 rounded-xl">Read More</button>
           </div>
         </div>
+        <hr class="w-2/3 my-10 mx-auto">
       </section>
-      <!-- <hr /> -->
-      <section class="mt-44">
-        <div class="mx-auto flex max-w-4xl justify-between space-x-5 pl-3">
-          <div class="">
+
+      
+
+      <!-- Card 2 (image) and we help student -->
+      <div class="sm:hidden flex-col max-w-lg justify-center items-center mx-auto mt-10">
+        <img class="mx-auto" src="./assets/images//second-card.png" alt="" />
+        <!-- We help student -->
+        <div class="container p-4 flex justify-between space-x-5 mt-10">
+          <div class="flex-col space-y-6 max-w-lg">
+            <h2 class="font-semibold text-3xl">We help students grow their career</h2>
+            <p class="text-lg">Meet the need of the modern student and drive outcome with a student engagement platform that create personal mobile experience that resonate throught the students academic journey.</p>
+            <div class="flex text-lg space-x-2">
+              <div class="flex-col">
+                <p class="text-2xl font-bold">17k</p>
+                <p class="text-lg text-zinc-700">Students</p>
+              </div>
+              <div class="flex-col">
+                <p class="text-2xl font-bold">70+</p>
+                <p class="text-lg text-zinc-700">Courses</p>
+              </div>
+              <div class="flex-col">
+                <p class="text-2xl font-bold">6+</p>
+                <p class="text-lg text-zinc-700">Experience</p>
+              </div>
+            </div>
+            <button class="bg-black text-white py-4 px-6 rounded-xl">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 (code) and we help student-->
+      <section class="my-10 sm:my-20">
+        <div class="hidden sm:flex mx-auto max-w-7xl justify-between space-x-5 p-7">
+          <div class="container">
             <div class="flex justify-between space-x-5 mb-16">
               <div class="flex-col space-y-10 max-w-lg">
                 <h2 class="font-semibold text-5xl">We help students grow their career</h2>
@@ -383,11 +450,11 @@
                 <button class="bg-black text-white py-4 px-6 rounded-xl">Read More</button>
               </div>
               <!-- Card -->
-              <div class="container bg-white rounded-xl h-72">
+              <div class="container bg-white max-w-lg rounded-xl h-72">
                 <div class="">
                   <div class="py-4 px-5 rounded-xl bg-white w-96 mx-auto shadow-lg">
                     <div>
-                      <img class="rounded-xl w-full h-44 object-cover object-center" src="/assets/images/card1.jpg" alt="" />
+                      <img class="rounded-xl w-full h-44 object-cover object-center" src="./assets/images//card-satu.jpg" alt="" />
                       <div class="relative -top-36 -mt-4 ml-2">
                         <a href="#" class="py-2 px-4 bg-white text-black text-xs tracking-wider rounded-full"> <span class="">Class Web Developer</span></a>
                       </div>
@@ -400,10 +467,10 @@
                     <div class="mt-4 flex space-x-3 text-sm text-neutral-700">
                       <div class="bg-yellow-100 py-2 px-3 rounded-2xl">Intermediate</div>
                       <div class="flex relative">
-                        <img class="rounded-full w-8 h-8" src="/assets/images/dea.jpg" alt="" />
-                        <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                        <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
-                        <img class="rounded-full w-8 h-8 -ml-2" src="/assets/images/dea.jpg" alt="" />
+                        <img class="rounded-full w-8 h-8" src="./assets/images//deaag.jpg" alt="" />
+                        <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                        <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
+                        <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                         <div class="bg-neutral-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
                       </div>
                     </div>
@@ -420,7 +487,7 @@
                     <div class="flex justify-between">
                       <div class="flex space-x-2 items-center">
                         <div>
-                          <img src="./assets/images/card1.jpg" class="w-7 h-7 rounded-full" alt="" />
+                          <img src="./assets/images//card-satu.jpg" class="w-7 h-7 rounded-full" alt="" />
                           <div class="rounded-full bg-green-500 h-2.5 w-2.5 -mt-1 relative ml-3"></div>
                         </div>
                         <p class="font-semibold">Salza Bella</p>
@@ -445,111 +512,172 @@
           </div>
         </div>
       </section>
-      <section class="bg-neutral-100 mt-44">
-        <div class="mx-auto flex flex-col max-w-6xl justify-between p-7 mb-16">
-          <h2 class="mx-auto text-5xl font-semibold mt-16 md:text-center">Testimonials from students</h2>
-          <div class="container flex justify-center space-x-7 flex-wrap mt-3">
-            <div class="card mt-14">
-              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images/dea.jpg" alt="" />
-              <div class="card-body -mt-6 px-6 py-5 w-80 h-72 bg-white rounded-xl flex flex-col justify-center items-center">
-                <p class="font-semibold text-2xl">Muhammad Ali</p>
-                <p class="text-lg">UI Designer</p>
-                <p class="text-center text-lg text-neutral-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
+
+      <!-- Testimonials from students -->
+      <section class="bg-neutral-100 pt-10">
+        <div class="mx-auto flex flex-col max-w-6xl justify-between p-4 my-5 sm:my-10">
+          <h2 class="mx-auto text-3xl sm:text-5xl font-semibold md:text-center">Testimonials from students</h2>
+          <div class="container flex flex-nowrap justify-center mt-3 mx-auto overflow-hidden">
+            <div class="card mt-10 sm:mt-14 mx-4">
+              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images//deaag.jpg" alt="" />
+              <div class="card-body -mt-6 px-8 py-10 w-64 sm:w-80 sm:px-6 sm:py-5 sm:h-72 bg-white rounded-xl flex flex-col justify-center items-center">
+                <p class="font-semibold text-lg sm:text-2xl">Muhammad Ali</p>
+                <p class="text-xs sm:text-lg">UI Designer</p>
+                <p class="text-center text-sm sm:text-lg text-neutral-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
               </div>
             </div>
-            <div class="card mt-14">
-              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images/dea.jpg" alt="" />
-              <div class="card-body -mt-6 px-6 py-5 w-80 h-72 bg-white rounded-xl flex flex-col justify-center items-center">
-                <p class="font-semibold text-2xl">Muhammad Ali</p>
-                <p class="text-lg">UI Designer</p>
-                <p class="text-center text-lg text-neutral-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
+            <div class="card mt-10 sm:mt-14 mx-4">
+              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images//deaag.jpg" alt="" />
+              <div class="card-body -mt-6 px-8 py-10 w-64 sm:w-80 sm:px-6 sm:py-5 sm:h-72 bg-white rounded-xl flex flex-col justify-center items-center">
+                <p class="font-semibold text-lg sm:text-2xl">Muhammad Ali</p>
+                <p class="text-xs sm:text-lg">UI Designer</p>
+                <p class="text-center text-sm sm:text-lg text-neutral-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
               </div>
             </div>
-            <div class="card mt-14">
-              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images/dea.jpg" alt="" />
-              <div class="card-body -mt-6 px-6 py-5 w-80 h-72 bg-white rounded-xl flex flex-col justify-center items-center">
-                <p class="font-semibold text-2xl">Muhammad Ali</p>
-                <p class="text-lg">UI Designer</p>
-                <p class="text-center text-lg text-neutral-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
+            <div class="card mt-10 sm:mt-14 mx-4">
+              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images//deaag.jpg" alt="" />
+              <div class="card-body -mt-6 px-8 py-10 w-64 sm:w-80 sm:px-6 sm:py-5 sm:h-72 bg-white rounded-xl flex flex-col justify-center items-center">
+                <p class="font-semibold text-lg sm:text-2xl">Muhammad Ali</p>
+                <p class="text-xs sm:text-lg">UI Designer</p>
+                <p class="text-center text-sm sm:text-lg text-neutral-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
               </div>
             </div>
           </div>
-          <div class="h-60"></div>
+          <div class="h-40 sm:h-72"></div>
         </div>
       </section>
+
+      <!-- Video thumbnail -->
       <section>
-        <div class="mx-auto flex max-w-5xl justify-between p-7 mb-16 rounded-xl mt-20" >
-          <div class="container mx-auto">
-            <img class="-mt-72 w-full" src="./assets/images/video thumbnail.png" alt="" />
+        <div class="mx-auto flex max-w-7xl justify-between p-4 sm:p-1 mb-16 my-10 sm:my-44">
+          <div class="container mx-auto rounded-xl">
+            <img class="-mt-36 sm:-mt-80 w-full" src="./assets/images//video thumbnail.png" alt="" />
           </div>
         </div>
       </section>
-      <footer class="bg-bljdark">
-        <div class="mx-auto flex flex-wrap max-w-5xl justify-between space-x-5 py-40">
-          <div class="max-w-2xl container flex items-center flex-col mx-auto text-white space-y-6">
-            <h3 class="text-center font-semibold text-5xl">Subscribe now to get latest information</h3>
-            <p class="text-center text-lg text-neutral-200">Fill in your email address and subscribe now to get more information about the Belajaran E-Learning</p>
-            <div class="container flex bg-white p-px rounded-xl w-1/2">
-              <input class="w-full border rounded-xl p-2" type="text" placeholder="Email Address" />
-              <button class="bg-bljyellow text-black p-3 text-sm rounded-xl font-semibold">Subscribe</button>
-            </div>
-          </div>
-        </div>
-        <div class="mx-auto flex max-w-5xl justify-between text-white space-x-16">
-          <ul class="space-y-3">
-            <li class="text-xl">Belajaran</li>
-            <li><p class="text-sm">a solutions for easy and flexible online learning. you can learn anywhere and anytime.</p></li>
-            <ul class="flex space-x-2">
-              <li><i class="bx bxl-twitter" style="color: #999292"></i></li>
-              <li><i class="bx bxl-instagram-alt" style="color: #999292"></i></li>
-            </ul>
-          </ul>
-          <ul class="space-y-3">
-            <li>Company</li>
-            <div class="text-sm space-y-3">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Class</li>
-              <li>Company</li>
-              <li>Career</li>
-            </div>
-          </ul>
-          <ul class="space-y-3">
-            <li>Support</li>
-            <div class="text-xs space-y-3">
-              <li>FAQs</li>
-              <li>Support Center</li>
-              <li>Contact Us</li>
-              <li>Our Team</li>
-            </div>
-          </ul>
-          <ul class="space-y-3">
-            <li>Other</li>
-            <div class="text-xs space-y-3">
-              <li>Documentation</li>
-              <li>Questions</li>
-              <li>Media</li>
-            </div>
-          </ul>
-          <ul class="space-y-3">
-            <li>Contact</li>
-            <div class="text-xs space-y-3">
-              <li>belajaran@gmail.com</li>
-              <li>+62 812-3456-7890</li>
-            </div>
-          </ul>
-        </div>
-        <div class="container mx-auto flex flex-col max-w-5xl flex-wrap pt-7 pb-7">
-          <hr />
-          <div class="flex justify-between">
-            <p class="text-start text-xs text-neutral-200 mt-4">All rights reserved © 2022</p>
-            <div class="flex space-x-5">
-              <p class="text-start text-xs text-neutral-200 mt-4">Tearms & Condition</p>
-              <p class="text-start text-xs text-neutral-200 mt-4">Privacy Policy</p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </main>
+
+    <!-- FOOter -->
+    <footer class="bg-bljdark">
+      <div class="mx-auto flex flex-wrap max-w-7xl justify-between space-x-5 py-24 sm:py-40 p-4">
+        <div class="max-w-2xl container flex items-center flex-col mx-auto text-white space-y-10">
+          <h3 class="text-center font-semibold text-3xl sm:text-5xl">Subscribe now to get latest information</h3>
+          <p class="text-center text-sm text-neutral-200">Fill in your email address and subscribe now to get more information about the Belajaran E-Learning</p>
+          <div class="container flex bg-white p-1 rounded-sm w-full">
+            <input class="w-full border rounded-l-sm px-8 py-5" type="text" placeholder="Email Address" />
+            <button class="bg-bljyellow text-black px-8 py-5 text-sm rounded-r-sm font-semibold">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer for desktop view -->
+      <div class="hidden sm:flex mx-auto max-w-7xl justify-evenly text-white space-x-10 sm:space-x-16">
+        <ul class="space-y-8 w-1/5">
+          <li class="text-3xl flex space-x-2 items-center"><i class="bx bx-book-reader text-bljyellow text-4xl"></i> <span>Belajaran</span></li>
+          <li><p class="text-lg text-gray-400">a solutions for easy and flexible online learning. you can learn anywhere and anytime.</p></li>
+          <ul class="flex space-x-2 text-2xl">
+            <li><i class="bx bxl-twitter" style="color: #999292"></i></li>
+            <li><i class="bx bxl-instagram-alt" style="color: #999292"></i></li>
+          </ul>
+        </ul>
+        <ul class="space-y-7">
+          <li class="text-xl">Company</li>
+          <div class="text-lg space-y-6 text-gray-400">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Class</li>
+            <li>Company</li>
+            <li>Career</li>
+          </div>
+        </ul>
+        <ul class="space-y-7">
+          <li class="text-xl">Support</li>
+          <div class="text-lg space-y-6 text-gray-400">
+            <li>FAQs</li>
+            <li>Support Center</li>
+            <li>Contact Us</li>
+            <li>Our Team</li>
+          </div>
+        </ul>
+        <ul class="space-y-7">
+          <li class="text-xl">Other</li>
+          <div class="text-lg space-y-6 text-gray-400">
+            <li>Documentation</li>
+            <li>Questions</li>
+            <li>Media</li>
+          </div>
+        </ul>
+        <ul class="space-y-7">
+          <li class="text-xl">Contact</li>
+          <div class="text-lg space-y-6 text-gray-400">
+            <li>belajaran@gmail.com</li>
+            <li>+62 812-3456-7890</li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Footer mobile view -->
+      <div class="flex-col sm:hidden mx-auto max-w-7xl justify-between text-white space-x-10 sm:space-x-16 p-4">
+        <ul class="space-y-3">
+          <li class="text-xl flex space-x-2 items-center"><i class="bx bx-book-reader text-bljyellow text-2xl sm:text-4xl"></i> <span>Belajaran</span></li>
+          <li><p class="text-sm">a solutions for easy and flexible online learning. you can learn anywhere and anytime.</p></li>
+          <ul class="flex space-x-2">
+            <li><i class="bx bxl-twitter" style="color: #999292"></i></li>
+            <li><i class="bx bxl-instagram-alt" style="color: #999292"></i></li>
+          </ul>
+          <div class="flex justify-start space-x-4">
+            <div>
+              <ul class="space-y-3">
+                <li>Company</li>
+                <div class="text-sm space-y-3">
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Class</li>
+                  <li>Company</li>
+                  <li>Career</li>
+                </div>
+              </ul>
+              <ul class="space-y-3">
+                <li>Support</li>
+                <div class="text-xs space-y-3">
+                  <li>FAQs</li>
+                  <li>Support Center</li>
+                  <li>Contact Us</li>
+                  <li>Our Team</li>
+                </div>
+              </ul>
+            </div>
+            <div>
+              <ul class="space-y-3">
+                <li>Other</li>
+                <div class="text-xs space-y-3">
+                  <li>Documentation</li>
+                  <li>Questions</li>
+                  <li>Media</li>
+                </div>
+              </ul>
+              <ul class="space-y-3">
+                <li>Contact</li>
+                <div class="text-xs space-y-3">
+                  <li>belajaran@gmail.com</li>
+                  <li>+62 812-3456-7890</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+      <div class="container mx-auto flex flex-col max-w-7xl flex-wrap pt-7 pb-7">
+        <hr />
+        <div class="flex justify-between">
+          <p class="text-start text-xs text-neutral-200 mt-4">All rights reserved © 2022</p>
+          <div class="flex space-x-5">
+            <p class="text-start text-xs text-neutral-200 mt-4">Tearms & Condition</p>
+            <p class="text-start text-xs text-neutral-200 mt-4">Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
