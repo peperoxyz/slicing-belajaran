@@ -13,6 +13,9 @@
     <title>Belajar Tailwind</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Poppins:wght@200;300;400;600;700;800&display=swap");
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
     </style>
   </head>
   <body class="">
@@ -36,26 +39,43 @@
         </div>
       </nav>
       <!-- Navbar Mobile-->
-      <nav class="flex items-center justify-between p-8 sm:hidden">
+
+      <nav class="flex items-center justify-between p-5 sm:hidden">
         <ul class="flex space-x-2 items-center sm:text-4xl">
           <li><i class="bx bx-book-reader text-bljyellow text-2xl sm:text-4xl"></i></li>
           <li><a href="#" class="text-white font-semibold">Belajaran</a></li>
         </ul>
         <ul class="">
           <li>
-            <a href=""><i class="bx bx-menu text-white text-2xl"></i></a>
+            <!-- <a href=""><i class="bx bx-menu text-white text-2xl"></i></a> -->
+
+            <!-- Menu dropdown -->
+            <div class="p-8">
+              <div class="dropdown inline-block relative">
+                <button class="font-semibold rounded inline-flex items-center">
+                  <i class="bx bx-menu text-white text-3xl"></i>
+                </button>
+                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                  <li><a href="" class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Home</a></li>
+                  <li><a href="" class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">About</a></li>
+                  <li><a href="" class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Class</a></li>
+                  <li><a href="" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Community</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- hehe -->
           </li>
         </ul>
       </nav>
       <!-- Main copy writing -->
-      <div class="container sm:mb-32 mx-auto text-center p-11 space-y-10">
-        <h1 class="font-semibold text-3xl sm:text-6xl sm:max-w-6xl mx-auto sm:leading-normal text-white">Learn design and coding from anywhere and anytime</h1>
+      <div class="container sm:mb-32 mx-auto text-center p-8 pt-1 sm:p-11 space-y-10">
+        <h1 class="font-semibold text-2xl sm:text-6xl sm:max-w-6xl mx-auto sm:leading-normal text-white">Learn design and coding from anywhere and anytime</h1>
         <div class="max-w-3xl mx-auto">
           <p class="sm:text-xl text-sm text-gray-400 font-semibold">a solution for easy and flexible online learning, you can learn anywhere and anytime</p>
         </div>
-        <button class="button bg-bljyellow text-black py-3 px-6 sm:py-5 sm:px-8 text-xl rounded-lg font-semibold"><a href="">Get Started</a></button>
+        <button class="button bg-bljyellow text-black py-3 px-5 sm:py-5 sm:px-8 text-sm sm:text-xl rounded-lg font-semibold"><a href="">Get Started</a></button>
       </div>
-      <div class="h-20 sm:h-52 sm:w-14"></div>
+      <div class="h-6 sm:h-52 sm:w-14"></div>
     </header>
     <main>
       <!-- Dashboard for desktop-view -->
@@ -81,7 +101,7 @@
                 <i class="bx bxs-grid-alt"></i>
               </div>
             </div>
-            <div class="col-span-6 px-5 py-8 bg-neutral-100 border-l">
+            <div class="col-span-6 px-5 py-8 bg-gray-100 border-l">
               <!-- Main Dashboard-Content Search Course -->
               <div class="mb-3">
                 <div class="flex rounded-lg border w-1/2 overflow-hidden">
@@ -89,7 +109,7 @@
                     <i class="p-2 bx bx-search"></i>
                   </div>
                   <div class="w-full">
-                    <input class="p-2 text-xs overflow-hidden bg-neutral-100 w-full" type="text" placeholder="Search Course" />
+                    <input class="p-2 text-xs overflow-hidden bg-gray-100 w-full" type="text" placeholder="Search Course" />
                   </div>
                 </div>
               </div>
@@ -119,7 +139,7 @@
                           <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                           <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                           <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
-                          <div class="bg-neutral-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
+                          <div class="bg-gray-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
                         </div>
                       </div>
                       <div class="mt-5 flex justify-between items-center">
@@ -155,7 +175,7 @@
                           <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                           <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                           <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
-                          <div class="bg-neutral-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
+                          <div class="bg-gray-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
                         </div>
                       </div>
                       <div class="mt-5 flex justify-between items-center">
@@ -188,7 +208,7 @@
                     <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
-                    <div class="bg-neutral-800 w-5 h-5 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center text-xs">9+</div>
+                    <div class="bg-gray-800 w-5 h-5 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center text-xs">9+</div>
                   </div>
                 </div>
                 <div class="rounded-xl bg-gray-200 w-40 h-5">
@@ -211,7 +231,7 @@
                     <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <img class="rounded-full w-5 h-5 -ml-2" src="./assets/images//deaag.jpg" alt="" />
-                    <div class="bg-neutral-800 h-5 w-5 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center text-xs">9+</div>
+                    <div class="bg-gray-800 h-5 w-5 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center text-xs">9+</div>
                   </div>
                 </div>
                 <div class="rounded-xl bg-gray-200 w-40 h-5">
@@ -244,7 +264,7 @@
               <!-- Calendar -->
               <div class="mx-2">
                 <div class="flex items-center justify-center py-1 px-2">
-                  <div class="max-w-sm w-full ">
+                  <div class="max-w-sm w-full">
                     <div class="sm:p-4 p-2 dark:bg-gray-800 bg-gray-50 rounded-t">
                       <div class="px-4 flex items-center justify-between">
                         <span tabindex="0" class="focus:outline-none text-base font-bold dark:text-gray-100 text-gray-800">October 2020</span>
@@ -377,12 +397,7 @@
                               <td>
                                 <div class="w-full h-full">
                                   <div class="flex items-center justify-center w-full rounded-full cursor-pointer">
-                                    <a
-                                      role="link"
-                                      tabindex="0"
-                                      class="focus:outline-none  hover:bg-bljyellow hover:text-bljdark   text-base w-8 h-8 flex items-center justify-center font-medium text-white bg-bljdark rounded-full"
-                                      >8</a
-                                    >
+                                    <a role="link" tabindex="0" class="focus:outline-none hover:bg-bljyellow hover:text-bljdark text-base w-8 h-8 flex items-center justify-center font-medium text-white bg-bljdark rounded-full">8</a>
                                   </div>
                                 </div>
                               </td>
@@ -569,19 +584,19 @@
 
       <!-- Logos -->
       <div class="flex flex-wrap justify-center items-center my-10 sm:my-36 px-2.5">
-        <img src="./assets/images//ticket.png" class="h-7 sm:h-11 mx-10" alt="" />
-        <img src="./assets/images//netflix.png" class="h-14 sm:h-20 mx-10" alt="" />
-        <img src="./assets/images//facebook.png" class="h-7 sm:h-9 mx-10" alt="" />
-        <img src="./assets/images//dropbox.png" class="h-7 sm:h-9 mx-10" alt="" />
-        <img src="./assets/images//airbnb.png" class="h-24 sm:h-28 mx-10" alt="" />
+        <img src="./assets/images//ticket.png" class="h-6 sm:h-11 mx-8 " alt="" />
+        <img src="./assets/images//netflix.png" class="h-11 sm:h-20 mx-8" alt="" />
+        <img src="./assets/images//facebook.png" class="h-6 sm:h-9 mx-8" alt="" />
+        <img src="./assets/images//dropbox.png" class="mt-5 h-6 sm:h-9 mx-8" alt="" />
+        <img src="./assets/images//airbnb.png" class="mt-5 h-20 sm:h-28 mx-8" alt="" />
       </div>
 
       <!-- Card 1 (image) and why we learn from belajaran -->
-      <div class="sm:hidden flex-col max-w-lg justify-center items-center mx-auto">
-        <img class="mx-auto" src="./assets/images//first-card.png" alt="" />
+      <div class="sm:hidden flex-col max-w-xl justify-center items-center mx-auto">
+        <img class="mx-auto min-w-sm max-w-sm" src="./assets/images//first-card.png" alt="" />
         <!-- Why we learn from belajaran -->
-        <div class="container flex-col space-y-6 max-w-lg p-4 sm:pt-3 sm:hidden">
-          <h2 class="font-semibold text-3xl">Why we learn from Belajaran</h2>
+        <div class="container flex-col space-y-6 max-w-sm p-4 sm:pt-3 sm:hidden mt-5 mx-auto">
+          <h2 class="font-semibold text-2xl sm:text-3xl">Why we learn from Belajaran</h2>
           <p class="text-sm">Belajaran is a global edutect based in Indonesia. A solution for easy and flexible online learning. You can learn anywhere and anytime.</p>
           <!-- <div class="flex text-sm space-x-2"> -->
           <ul class="grid grid-cols-2 gap-3 text-sm">
@@ -598,10 +613,19 @@
       </div>
 
       <!-- Card 1 (code) and why we learn from belajaran -->
+
       <section class="">
-        <div class="hidden sm:flex mx-auto max-w-7xl justify-between space-x-5 p-7">
-          <div class="container bg-white rounded-xl w-96 h-72">
+        <div class="hidden sm:flex mx-auto max-w-7xl justify-between space-x-5 p-7 z-20">
+          <!-- SVG circle -->
+          <!-- <div>
+            <svg class="hidden sm:block absolute w-144 h-144 bg-gradient-to-b rounded-full from-yellow-100 z-0 -ml-44 -mt-14"></svg>
+          </div> -->
+          <div class="container bg-white rounded-xl w-96 h-72 sm:relative">
             <div>
+              <svg class="hidden sm:block absolute w-144 h-144 bg-gradient-to-b rounded-full from-yellow-100 z-0 -ml-56 -mt-36"></svg>
+            </div>
+            <!-- Body card -->
+            <div class="sm:absolute absolute">
               <div class="py-4 px-5 rounded-xl bg-white w-96 mx-auto shadow-lg">
                 <div>
                   <img class="rounded-xl w-full h-44 object-cover object-center" src="./assets/images//card2.jpg" alt="" />
@@ -621,7 +645,7 @@
                     <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                     <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
-                    <div class="bg-neutral-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
+                    <div class="bg-gray-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
                   </div>
                 </div>
                 <div class="mt-5 flex justify-between items-center">
@@ -665,11 +689,11 @@
 
       <!-- Card 2 (image) and we help student -->
       <div class="sm:hidden flex-col max-w-lg justify-center items-center mx-auto mt-10">
-        <img class="mx-auto" src="./assets/images//second-card.png" alt="" />
+        <img class="mx-auto max-w-sm" src="./assets/images//second-card.png" alt="" />
         <!-- We help student -->
-        <div class="container p-4 flex justify-between space-x-5 mt-10">
+        <div class="container p-4 flex justify-between space-x-5 mt-10  flex-col space-y-6 max-w-sm sm:pt-3 sm:hidden  mx-auto">
           <div class="flex-col space-y-6 max-w-lg">
-            <h2 class="font-semibold text-3xl">We help students grow their career</h2>
+            <h2 class="font-semibold text-2xl sm:text-3xl">We help students grow their career</h2>
             <p class="text-sm">Meet the need of the modern student and drive outcome with a student engagement platform that create personal mobile experience that resonate throught the students academic journey.</p>
             <div class="flex text-sm space-x-5">
               <div class="flex-col">
@@ -691,6 +715,7 @@
       </div>
 
       <!-- Card 2 (code) and we help student-->
+
       <section class="my-10 sm:my-20">
         <div class="hidden sm:flex mx-auto max-w-7xl justify-between space-x-5 p-7">
           <div class="container">
@@ -715,8 +740,12 @@
                 <button class="bg-black text-xl text-white py-5 px-8 rounded-lg">Read More</button>
               </div>
               <!-- Card -->
-              <div class="container bg-white max-w-lg rounded-xl h-72">
-                <div class="">
+              <!-- SVG circle -->
+              <div>
+                <svg class="hidden sm:block absolute w-144 h-144 bg-gradient-to-b rounded-full from-yellow-100 ml-24 -mt-36"></svg>
+              </div>
+              <div class="container bg-white max-w-sm rounded-xl h-72 ">
+                <div class="sm:absolute absolute">
                   <div class="py-4 px-5 rounded-xl bg-white w-96 mx-auto shadow-lg">
                     <div>
                       <img class="rounded-xl w-full h-44 object-cover object-center" src="./assets/images//card-satu.jpg" alt="" />
@@ -736,7 +765,7 @@
                         <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                         <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
                         <img class="rounded-full w-8 h-8 -ml-2" src="./assets/images//deaag.jpg" alt="" />
-                        <div class="bg-neutral-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
+                        <div class="bg-gray-800 h-8 w-8 -ml-2 opacity-90 text-white rounded-full text-center items-center flex justify-center">9+</div>
                       </div>
                     </div>
                     <div class="mt-5 flex justify-between items-center">
@@ -779,9 +808,9 @@
       </section>
 
       <!-- Testimonials from students -->
-      <section class="bg-neutral-100 pt-10">
-        <div class="mx-auto flex flex-col max-w-6xl justify-between p-4 my-5 sm:my-10">
-          <h2 class="mx-auto text-3xl sm:text-5xl font-semibold md:text-center">Testimonials from students</h2>
+      <section class="bg-gray-100 pt-10">
+        <div class="mx-auto flex flex-col max-w-6xl justify-between p-1  sm:p-3 my-5 sm:my-10">
+          <h2 class="mx-auto text-2xl sm:text-5xl font-semibold md:text-center">Testimonials from students</h2>
           <div class="container flex flex-nowrap justify-center mt-3 mx-auto overflow-hidden">
             <div class="card mt-10 sm:mt-14 mx-4">
               <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images//deaag.jpg" alt="" />
@@ -826,7 +855,7 @@
     <footer class="bg-bljdark">
       <div class="mx-auto flex flex-wrap max-w-7xl justify-between space-x-5 py-24 sm:py-40 p-4">
         <div class="max-w-2xl container flex items-center flex-col mx-auto text-white space-y-10">
-          <h3 class="text-center font-semibold text-3xl sm:text-5xl">Subscribe now to get latest information</h3>
+          <h3 class="text-center font-semibold text-2xl sm:text-5xl">Subscribe now to get latest information</h3>
           <p class="text-center text-sm text-gray-200">Fill in your email address and subscribe now to get more information about the Belajaran E-Learning</p>
           <div class="container flex bg-white p-1 rounded-sm w-full">
             <input class="w-full border rounded-l-sm px-8 py-5" type="text" placeholder="Email Address" />
@@ -887,11 +916,11 @@
           <li class="text-xl flex space-x-2 items-center"><i class="bx bx-book-reader text-bljyellow text-2xl sm:text-4xl"></i> <span>Belajaran</span></li>
           <li><p class="text-sm">a solutions for easy and flexible online learning. you can learn anywhere and anytime.</p></li>
           <ul class="flex space-x-2">
-            <li><i class="bx bxl-twitter" style="color: #999292"></i></li>
-            <li><i class="bx bxl-instagram-alt" style="color: #999292"></i></li>
+            <li><i class="bx bxl-twitter text-gray-400"></i></li>
+            <li><i class="bx bxl-instagram-alt text-gray-400"></i></li>
           </ul>
           <div class="flex justify-start space-x-4">
-            <div>
+            <div class="space-y-5">
               <ul class="space-y-3">
                 <li>Company</li>
                 <div class="text-sm space-y-3 text-gray-400">
@@ -904,7 +933,7 @@
               </ul>
               <ul class="space-y-3">
                 <li>Support</li>
-                <div class="text-xs space-y-3 text-gray-400">
+                <div class="text-sm space-y-3 text-gray-400">
                   <li>FAQs</li>
                   <li>Support Center</li>
                   <li>Contact Us</li>
@@ -912,10 +941,10 @@
                 </div>
               </ul>
             </div>
-            <div>
+            <div class="space-y-5">
               <ul class="space-y-3">
                 <li>Other</li>
-                <div class="text-xs space-y-3 text-gray-400">
+                <div class="text-sm space-y-3 text-gray-400">
                   <li>Documentation</li>
                   <li>Questions</li>
                   <li>Media</li>
@@ -923,7 +952,7 @@
               </ul>
               <ul class="space-y-3">
                 <li>Contact</li>
-                <div class="text-xs space-y-3 text-gray-400">
+                <div class="text-sm space-y-3 text-gray-400">
                   <li>belajaran@gmail.com</li>
                   <li>+62 812-3456-7890</li>
                 </div>
