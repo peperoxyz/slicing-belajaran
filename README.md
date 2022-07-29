@@ -1,6 +1,6 @@
 # Slicing Web Belajaran E-Course Online Landing Page
 
-Live Site Responsive: [Belajaran E-Course Online Landing Page](https://belajaran-responsive.netlify.app/)
+Live Site(It's Responsive!): [Belajaran E-Course Online Landing Page](https://belajaran.netlify.app/)
 
 ## Credits
 
