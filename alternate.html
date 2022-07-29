@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="blj-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&amp;family=Poppins:wght@200;300;400;600;700;800&amp;display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
     <title>Belajar Tailwind</title>
@@ -69,9 +68,9 @@
       </nav>
       <!-- Main copy writing -->
       <div class="container sm:mb-32 mx-auto text-center p-8 pt-1 sm:p-11 space-y-10">
-        <h1 class="font-semibold text-2xl sm:text-6xl max-w-sm sm:max-w-6xl mx-auto sm:leading-normal text-white">Learn design and coding from anywhere and anytime</h1>
+        <h1 class="font-semibold text-2xl sm:text-6xl sm:max-w-6xl mx-auto sm:leading-normal text-white">Learn design and coding from anywhere and anytime</h1>
         <div class="max-w-3xl mx-auto">
-          <p class="sm:text-xl text-sm text-gray-400 font-semibold max-w-sm sm:max-w-xl mx-auto">a solution for easy and flexible online learning, you can learn anywhere and anytime</p>
+          <p class="sm:text-xl text-sm text-gray-400 font-semibold">a solution for easy and flexible online learning, you can learn anywhere and anytime</p>
         </div>
         <button class="button bg-bljyellow text-black py-3 px-5 sm:py-5 sm:px-8 text-sm sm:text-xl rounded-lg font-semibold"><a href="">Get Started</a></button>
       </div>
@@ -282,8 +281,8 @@
                               stroke-linecap="round"
                               stroke-linejoin="round"
                             >
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                              <polyline points="15 6 9 12 15 18" />
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                              <polyline points="15 6 9 12 15 18"></polyline>
                             </svg>
                           </button>
                           <button aria-label="calendar forward" class="focus:text-gray-400 hover:text-gray-400 ml-3 text-gray-800">
@@ -299,8 +298,8 @@
                               stroke-linecap="round"
                               stroke-linejoin="round"
                             >
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                              <polyline points="9 6 15 12 9 18" />
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                              <polyline points="9 6 15 12 9 18"></polyline>
                             </svg>
                           </button>
                         </div>
@@ -592,16 +591,10 @@
       </div>
 
       <!-- Card 1 (image) and why we learn from belajaran -->
-      <div class="sm:hidden flex-col max-w-xl justify-center items-center mx-auto">
-        <!-- SVG Circle -->
-        <div class="absolute">
-          <svg class="block sm:hidden  w-128 h-128 bg-gradient-to-b rounded-full from-yellow-100 z-0 -ml-56 -mt-20"></svg>
-        </div>
-        <div class="max-w-xl mx-auto relative">
-          <img class="mx-auto" src="./assets/images/first-card.png" alt="" />
-        </div>
+      <div class="sm:hidden flex-col  justify-center items-center mx-auto max-w-sm">
+        <img src="./assets/images//first-card.png" alt="" class="mx-auto" />
         <!-- Why we learn from belajaran -->
-        <div class="container flex-col space-y-6 max-w-lg p-4 sm:pt-3 sm:hidden mt-5 mx-auto">
+        <div class="container flex-col space-y-6 p-4 sm:pt-3 sm:hidden mt-5 mx-auto">
           <h2 class="font-semibold text-2xl sm:text-3xl">Why we learn from Belajaran</h2>
           <p class="text-sm">Belajaran is a global edutect based in Indonesia. A solution for easy and flexible online learning. You can learn anywhere and anytime.</p>
           <!-- <div class="flex text-sm space-x-2"> -->
@@ -692,16 +685,10 @@
       </section>
 
       <!-- Card 2 (image) and we help student -->
-      <div class="sm:hidden flex-col max-w-xl justify-center items-center mx-auto">
-        <!-- SVG Circle -->
-        <div class="absolute">
-          <svg class="block sm:hidden  w-128 h-128 bg-gradient-to-b rounded-full from-yellow-100 z-0 ml-56 -mt-20"></svg>
-        </div>
-        <div class="max-w-xl mx-auto relative">
-          <img class="mx-auto" src="./assets/images/second-card.png" alt="" />
-        </div>
+      <div class="sm:hidden flex-col justify-center items-center mx-auto mt-10 max-w-sm">
+        <img src="./assets/images//second-card.png" alt="" class="mx-auto" />
         <!-- We help student -->
-        <div class="container p-4 flex justify-between space-x-5 mt-10 flex-col space-y-6 max-w-lg sm:pt-3 sm:hidden mx-auto">
+        <div class="container p-4 flex justify-between space-x-5 mt-10 flex-col space-y-6 sm:pt-3 sm:hidden mx-auto">
           <div class="flex-col space-y-6 max-w-lg">
             <h2 class="font-semibold text-2xl sm:text-3xl">We help students grow their career</h2>
             <p class="text-sm">Meet the need of the modern student and drive outcome with a student engagement platform that create personal mobile experience that resonate throught the students academic journey.</p>
@@ -751,8 +738,8 @@
               </div>
               <!-- Card -->
               <!-- SVG circle -->
-              <div>
-                <svg class="hidden sm:block absolute w-144 h-144 bg-gradient-to-b rounded-full from-yellow-100 ml-44 -mt-36 overflow-x-hidden"></svg>
+              <div class="overflow-hidden">
+                <svg class="hidden sm:block absolute w-144 h-144 bg-gradient-to-b rounded-full from-yellow-100 ml-44 -mt-36 overflow-hidden"></svg>
               </div>
               <div class="container bg-white max-w-sm rounded-xl h-72">
                 <div class="sm:absolute absolute">
@@ -820,8 +807,8 @@
       <!-- Testimonials from students -->
       <section class="bg-gray-100 pt-10">
         <div class="mx-auto flex flex-col max-w-6xl justify-between p-1 sm:p-3 my-5 sm:my-10">
-          <h2 class="mx-auto text-2xl text-center sm:text-5xl font-semibold md:text-center">Testimonials from students</h2>
-          <div class="container flex flex-nowrap justify-center mt-3 mx-auto overflow-hidden">
+          <h2 class="mx-auto text-2xl sm:text-5xl font-semibold text-center">Testimonials from students</h2>
+          <div class="container flex justify-center mt-3 mx-auto overflow-hidden">
             <div class="card mt-10 sm:mt-14 mx-4">
               <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images//deaag.jpg" alt="" />
               <div class="card-body -mt-6 px-8 py-10 w-64 sm:w-80 sm:px-6 sm:py-5 sm:h-72 bg-white rounded-xl flex flex-col justify-center items-center">
@@ -853,8 +840,8 @@
 
       <!-- Video thumbnail -->
       <section>
-        <div class="mx-auto flex max-w-7xl justify-between p-4 sm:p-1 mb-16 my-10 sm:my-44">
-          <div class="container mx-auto rounded-xl">
+        <div class="mx-auto flex max-w-7xl justify-between p-4 sm:p-1 mb-16 my-10 sm:my-44 ">
+          <div class="container mx-auto rounded-xl ">
             <img class="-mt-36 sm:-mt-80 w-full" src="./assets/images//video thumbnail.png" alt="" />
           </div>
         </div>
@@ -977,7 +964,7 @@
         <div class="flex justify-between">
           <p class="text-start text-sm sm:text-lg text-gray-200 mt-4">All rights reserved © 2022</p>
           <div class="flex space-x-5">
-            <p class="text-start text-sm sm:text-lg text-gray-200 mt-4">Terms & Condition</p>
+            <p class="text-start text-sm sm:text-lg text-gray-200 mt-4">Terms &amp; Condition</p>
             <p class="text-start text-sm sm:text-lg text-gray-200 mt-4">Privacy Policy</p>
           </div>
         </div>
