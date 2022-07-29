@@ -21,8 +21,8 @@
   <body class="">
     <header class="bg-bljdark">
       <!-- Navbar Desktop -->
-      <nav class="text-white bg-bljdark px-5 py-16 hidden sm:block">
-        <div class="mx-auto flex flex-nowrap justify-between max-w-6xl space-x-32">
+      <nav class="text-white bg-bljdark px-5 py-16 hidden lg:block ">
+        <div class="mx-auto flex flex-wrap justify-between max-w-6xl space-x-32">
           <ul class="flex space-x-2 items-center sm:text-4xl">
             <li><i class="bx bx-book-reader text-bljyellow text-2xl sm:text-4xl"></i></li>
             <li><a href="#" class="text-white font-semibold">Belajaran</a></li>
@@ -40,7 +40,7 @@
       </nav>
       <!-- Navbar Mobile-->
 
-      <nav class="flex items-center justify-between p-5 sm:hidden">
+      <nav class="flex items-center justify-between p-5 lg:hidden">
         <ul class="flex space-x-2 items-center sm:text-4xl">
           <li><i class="bx bx-book-reader text-bljyellow text-2xl sm:text-4xl"></i></li>
           <li><a href="#" class="text-white font-semibold">Belajaran</a></li>
@@ -79,7 +79,7 @@
     </header>
     <main>
       <!-- Dashboard for desktop-view -->
-      <section class="hidden sm:flex">
+      <section class="hidden lg:flex">
         <div class="mx-auto max-w-7xl">
           <!-- <img src="../assets/images//dashboard.png" alt="dashboard" class="inline -mt-52" /> -->
           <div class="grid grid-cols-10 border rounded-2xl overflow-hidden shadow-lg -mt-72">
@@ -584,24 +584,24 @@
 
       <!-- Logos -->
       <div class="flex flex-wrap justify-center items-center my-10 sm:my-36 px-2.5">
-        <img src="./assets/images//ticket.png" class="h-6 sm:h-11 mx-8" alt="" />
-        <img src="./assets/images//netflix.png" class="h-11 sm:h-20 mx-8" alt="" />
-        <img src="./assets/images//facebook.png" class="h-6 sm:h-9 mx-8" alt="" />
-        <img src="./assets/images//dropbox.png" class="mt-5 h-6 sm:h-9 mx-8" alt="" />
-        <img src="./assets/images//airbnb.png" class="mt-5 h-20 sm:h-28 mx-8" alt="" />
+        <img src="./assets/images//ticket.png" class="h-6 sm:h-8 mx-8" alt="" />
+        <img src="./assets/images//netflix.png" class="h-11 sm:h-16 mx-8" alt="" />
+        <img src="./assets/images//facebook.png" class="h-6 sm:h-7 mx-8" alt="" />
+        <img src="./assets/images//dropbox.png" class="mt-4 h-6 sm:h-7 mx-8" alt="" />
+        <img src="./assets/images//airbnb.png" class="mt-3 h-20 sm:h-28 mx-8" alt="" />
       </div>
 
       <!-- Card 1 (image) and why we learn from belajaran -->
-      <div class="sm:hidden flex-col max-w-xl justify-center items-center mx-auto">
+      <div class="lg:hidden flex-col max-w-xl justify-center items-center mx-auto">
         <!-- SVG Circle -->
         <div class="absolute">
-          <svg class="block sm:hidden w-80   h-80  bg-gradient-to-b rounded-full from-yellow-100 z-0 -ml-56 -mt-24"></svg>
+          <svg class="block lg:hidden w-80 lg:w-96 lg:h-96  h-80  bg-gradient-to-b rounded-full from-yellow-100 z-0 -ml-56 -mt-24"></svg>
         </div>
         <div class="max-w-xl mx-auto relative">
           <img class="mx-auto" src="./assets/images/first-card.png" alt="" />
         </div>
         <!-- Why we learn from belajaran -->
-        <div class="container flex-col space-y-6 max-w-lg p-4 sm:pt-3 sm:hidden mt-5 mx-auto">
+        <div class="container flex-col space-y-6 max-w-lg p-4 sm:pt-3 lg:hidden mt-5 mx-auto">
           <h2 class="font-semibold text-2xl sm:text-3xl">Why we learn from Belajaran</h2>
           <p class="text-sm">Belajaran is a global edutect based in Indonesia. A solution for easy and flexible online learning. You can learn anywhere and anytime.</p>
           <ul class="grid grid-cols-2 gap-3 text-sm">
@@ -620,10 +620,10 @@
       <!-- Card 1 (code) and why we learn from belajaran -->
 
       <section class="">
-        <div class="hidden sm:flex mx-auto max-w-7xl justify-between space-x-5 p-7 z-20">
+        <div class="hidden lg:flex mx-auto max-w-7xl justify-between space-x-5 p-7 z-20">
           <div class="container">
             <div>
-              <svg class="hidden sm:block absolute w-144 h-144 bg-gradient-to-b rounded-full from-yellow-100 z-0 -ml-56 -mt-36"></svg>
+              <svg class="hidden sm:block absolute w-144 h-144 bg-gradient-to-b rounded-full from-yellow-100 z-0 -ml-56 -mt-20"></svg>
             </div>
             <!-- Body card -->
             <div class="container bg-white max-w-sm rounded-xl">
@@ -691,7 +691,7 @@
       </section>
 
       <!-- Card 2 (image) and we help student -->
-      <div class="sm:hidden flex-col max-w-xl justify-center items-center mx-auto">
+      <div class="lg:hidden flex-col max-w-xl justify-center items-center mx-auto">
         <!-- SVG Circle -->
         <div class="absolute hidden">
           <svg class="block sm:hidden w-128 h-128 bg-gradient-to-b rounded-full from-yellow-100 z-0 ml-56 -mt-20"></svg>
@@ -700,7 +700,7 @@
           <img class="mx-auto" src="./assets/images/second-card.png" alt="" />
         </div>
         <!-- We help student -->
-        <div class="container p-4 flex justify-between space-x-5 mt-10 flex-col space-y-6 max-w-lg sm:pt-3 sm:hidden mx-auto">
+        <div class="container p-4 flex justify-between space-x-5 mt-10 flex-col space-y-6 max-w-lg sm:pt-3 lg:hidden mx-auto">
           <div class="flex-col space-y-6 max-w-lg">
             <h2 class="font-semibold text-2xl sm:text-3xl">We help students grow their career</h2>
             <p class="text-sm">Meet the need of the modern student and drive outcome with a student engagement platform that create personal mobile experience that resonate throught the students academic journey.</p>
@@ -726,7 +726,7 @@
       <!-- Card 2 (code) and we help student-->
 
       <section class="my-10 sm:my-20">
-        <div class="hidden sm:flex mx-auto max-w-7xl justify-between space-x-5 p-7">
+        <div class="hidden lg:flex mx-auto max-w-7xl justify-between space-x-5 p-7">
           <div class="container">
             <div class="flex justify-between space-x-5 mb-16">
               <div class="flex-col space-y-10 max-w-xl">
@@ -821,25 +821,27 @@
         <div class="mx-auto flex flex-col max-w-6xl justify-between p-1 sm:p-3 my-5 sm:my-10">
           <h2 class="mx-auto text-2xl text-center sm:text-5xl font-semibold md:text-center">Testimonials from students</h2>
           <div class="container flex flex-nowrap justify-center mt-3 mx-auto overflow-hidden">
-            <div class="card mt-10 sm:mt-14 mx-4">
-              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images//deaag.jpg" alt="" />
-              <div class="card-body -mt-6 px-8 py-10 w-64 sm:w-80 sm:px-6 sm:py-5 sm:h-72 bg-white rounded-xl flex flex-col justify-center items-center">
+            <div class="card mt-10 sm:mt-14 mx-6">
+              <img class="rounded-full w-20 h-20 sm:w-28 sm:h-28 mx-auto" src="./assets/images//deaag.jpg" alt="" />
+              <div class="card-body -mt-6 px-8 py-10 w-64  sm:px-6 sm:w-80 sm:py-5 sm:h-80 bg-white rounded-xl flex flex-col justify-center items-center">
                 <p class="font-semibold text-lg sm:text-2xl">Muhammad Ali</p>
                 <p class="text-xs sm:text-lg">UI Designer</p>
                 <p class="text-center text-sm sm:text-lg text-gray-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
               </div>
             </div>
-            <div class="card mt-10 sm:mt-14 mx-4">
-              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images//deaag.jpg" alt="" />
-              <div class="card-body -mt-6 px-8 py-10 w-64 sm:w-80 sm:px-6 sm:py-5 sm:h-72 bg-white rounded-xl flex flex-col justify-center items-center">
+
+            <div class="card mt-10 sm:mt-14 mx-6">
+              <img class="rounded-full w-20 h-20 sm:w-28 sm:h-28 mx-auto" src="./assets/images//deaag.jpg" alt="" />
+              <div class="card-body -mt-6 px-8 py-10 w-64  sm:px-6 sm:w-80 sm:py-5 sm:h-80 bg-white rounded-xl flex flex-col justify-center items-center">
                 <p class="font-semibold text-lg sm:text-2xl">Muhammad Ali</p>
                 <p class="text-xs sm:text-lg">UI Designer</p>
                 <p class="text-center text-sm sm:text-lg text-gray-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
               </div>
             </div>
-            <div class="card mt-10 sm:mt-14 mx-4">
-              <img class="rounded-full w-20 h-20 mx-auto" src="./assets/images//deaag.jpg" alt="" />
-              <div class="card-body -mt-6 px-8 py-10 w-64 sm:w-80 sm:px-6 sm:py-5 sm:h-72 bg-white rounded-xl flex flex-col justify-center items-center">
+
+            <div class="card mt-10 sm:mt-14 mx-6">
+              <img class="rounded-full w-20 h-20 sm:w-28 sm:h-28 mx-auto" src="./assets/images//deaag.jpg" alt="" />
+              <div class="card-body -mt-6 px-8 py-10 w-64  sm:px-6 sm:w-80 sm:py-5 sm:h-80 bg-white rounded-xl flex flex-col justify-center items-center">
                 <p class="font-semibold text-lg sm:text-2xl">Muhammad Ali</p>
                 <p class="text-xs sm:text-lg">UI Designer</p>
                 <p class="text-center text-sm sm:text-lg text-gray-500 mt-4">"Belajaran is a global eductect based in Indonesia very best."</p>
@@ -874,7 +876,7 @@
       </div>
 
       <!-- Footer for desktop view -->
-      <div class="hidden sm:flex mx-auto max-w-7xl justify-evenly text-white space-x-10 sm:space-x-16">
+      <div class="hidden lg:flex mx-auto max-w-7xl justify-evenly text-white space-x-10 sm:space-x-16">
         <ul class="space-y-8 w-1/5">
           <li class="text-3xl flex space-x-2 items-center"><i class="bx bx-book-reader text-bljyellow text-4xl"></i> <span>Belajaran</span></li>
           <li><p class="text-lg text-gray-400">a solutions for easy and flexible online learning. you can learn anywhere and anytime.</p></li>
@@ -920,7 +922,7 @@
       </div>
 
       <!-- Footer mobile view -->
-      <div class="flex-col sm:hidden mx-auto max-w-7xl justify-between text-white space-x-10 sm:space-x-16 p-4">
+      <div class="flex-col lg:hidden mx-auto max-w-7xl justify-between text-white space-x-10 sm:space-x-16 p-4">
         <ul class="space-y-3">
           <li class="text-xl flex space-x-2 items-center"><i class="bx bx-book-reader text-bljyellow text-2xl sm:text-4xl"></i> <span>Belajaran</span></li>
           <li><p class="text-sm">a solutions for easy and flexible online learning. you can learn anywhere and anytime.</p></li>
